@@ -1,0 +1,31 @@
+[project]
+name = "bank_statement_analysis"
+version = "0.1.0"
+description = "Analyze the bank transaction statements"
+authors = [{ name = "Madhan Kumaravelu" }]
+dependencies = [
+    "torch==2.5.1",
+    "torchvision==0.20.1",
+    "torchaudio==2.5.1",
+    "marker-pdf==1.2.7",
+    "streamlit==1.41.0",
+    "pandas==2.2.2",
+    "requests==2.31.0",
+    "pydantic==2.10.5"
+]
+
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-cpu" },
+]
+torchvision = [
+  { index = "pytorch-cpu" },
+]
+torchaudio = [
+    { index = "pytorch-cpu" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true

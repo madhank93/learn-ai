@@ -1,0 +1,13 @@
+services:
+  bank_statement_analysis:
+    build: .
+    container_name: bank_statement_analysis
+    ports:
+      - "8501:8501"
+    command: ["uv", "run", "streamlit", "run", "app.py"]
+    environment:
+      - OLLAMA_HOST=host.docker.internal
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - .:/app

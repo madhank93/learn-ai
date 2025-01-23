@@ -1,0 +1,15 @@
+{
+    "name": "Python Dev Container",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "bank_statement_analysis",
+    "workspaceFolder": "/app",
+    "shutdownAction": "stopCompose",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance"
+            ]
+        }
+    }
+}
