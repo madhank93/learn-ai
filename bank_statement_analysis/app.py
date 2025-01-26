@@ -3,7 +3,6 @@ from typing import List
 import pandas as pd
 import os
 from pydantic import BaseModel
-from string import Template
 from marker.converters.pdf import PdfConverter
 from marker.models import create_model_dict
 from marker.output import text_from_rendered
@@ -45,27 +44,6 @@ Key Requirements:
 Analyze the following bank statement and extract the required information:
 
 Output Format:
-Provide the extracted data in the following JSON structure:
-
-{
-    "transactions": {
-        "account_holder": {
-            "name": "Full Name",
-            "account_number": "Complete Account Number"
-        },
-        "transactions": [
-            {
-                "date": "DD-MM-YYYY",
-                "amount": float,
-                "currency": "Currency Code",
-                "type": "CREDIT or DEBIT",
-                "description": "Cleaned Description",
-                "balance": float
-            },
-            // ... more transactions
-        ]
-    }
-}
 
 Parsing Rules:
 1. Account Holder:
