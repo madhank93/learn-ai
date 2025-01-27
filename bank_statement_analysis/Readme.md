@@ -1,6 +1,6 @@
 # Bank Statement Analysis
 
-Blog - 
+Blog - https://medium.com/@madhankumaravelu93/simplifying-bank-statement-analysis-using-marker-and-ollama-570b1f9dfa4b
 
 ## Uses
 
